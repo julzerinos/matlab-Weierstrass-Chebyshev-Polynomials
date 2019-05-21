@@ -7,4 +7,7 @@ for it = 1:n
 end
 
 x = 0;
-w = WeierstrassPolynomial(4, x, p)
+w = WeierstrassPolynomial(4, x, p);
+xa
+roots(p)
+[x, k] = Weierstrass(xa, p, 1e-20, 100)
