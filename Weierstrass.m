@@ -7,15 +7,15 @@ function [x,k]=Weierstrass(x0, p, tol, max_iter)
 % tol : tolerance
 % max_iter : maximum number of iterations
 
-n = max(size(p))
+n = max(size(p));
 
 dx=tol+1;
 k=0; x=[];
 
 while norm(dx)> tol && k<= max_iter 
 
-    for i = i:n
-        dx(i) = WeierstrassPolynomial(n, x0(i), p)/product1
+    for i = 1:n
+        dx(i) = WeierstrassPolynomial(x0(i), p)/product1;
     end
     x=x0-dx;
     k=k+1;
@@ -25,3 +25,4 @@ end
 end
     
 % TD product1 function to calculate products
+function s = product(

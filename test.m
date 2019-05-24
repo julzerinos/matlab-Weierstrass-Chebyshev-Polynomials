@@ -9,7 +9,7 @@ end
 % TD examples
 
 x = 0;
-w = WeierstrassPolynomial(4, x, p);
+w = WeierstrassPolynomial(x, p)
 p
 xa
 [x, k] = Weierstrass(xa, p, 1e-6, 100)
