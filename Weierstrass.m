@@ -15,7 +15,7 @@ k=0; x=[];
 while norm(dx)> tol && k<= max_iter 
 
     for i = 1:n
-        dx(i) = WeierstrassPolynomial(x0(i), p)/product1;
+        dx(i) = WeierstrassPolynomial(x0(i), p)/product1(x0,i);
     end
     x=x0-dx;
     k=k+1;
@@ -25,4 +25,9 @@ end
 end
     
 % TD product1 function to calculate products
-function s = product(
+function s = product1(x, i)
+    s = 1;
+    for j = 0:n
+     s = s*(x(j)-x(i));
+    end
+end
