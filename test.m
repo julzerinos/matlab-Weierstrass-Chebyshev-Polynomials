@@ -1,15 +1,15 @@
-n = 4;
-p = zeros(1, n + 1);
-xa = zeros(1, n);
-for it = 1:n
-    p(1, it) = 1/(2^(n-it)); % change to be random
-    xa(1, it) = rand + 1i*rand;
-end
+n = 1;
 
-% TD examples
+p = rand(n + 1, 1);
+p(1) = 1/(2^(n-1));
+
+xa = rand(n, 1);
+
+% 
+% % TD examples
+% 
 
 x = 0;
 w = WeierstrassPolynomial(x, p)
 p
-xa
-[x, k] = Weierstrass(xa, p, 1e-6, 100)
+% [x, k] = Weierstrass(xa, p, 1e-6, 100)
