@@ -28,6 +28,9 @@ end
 function s = product1(x, i)
     s = 1;
     for j = 1:max(size(x))
+        if(i == j)
+            continue 
+        end
      s = s*(x(j)-x(i));
     end
 end
