@@ -27,7 +27,7 @@ end
 % TD product1 function to calculate products
 function s = product1(x, i)
     s = 1;
-    for j = 0:n
+    for j = 1:max(size(x))
      s = s*(x(j)-x(i));
     end
 end

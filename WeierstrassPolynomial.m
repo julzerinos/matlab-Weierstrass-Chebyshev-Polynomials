@@ -19,7 +19,7 @@ w = p(n+1) + t(1) * p(n) + t(2) * p(n-1);
 for i = 3:n
 
      t(i) = 2 * x * t(i-1) - t(i-2); 
-     w = w + p(n-i) * t(i);
+     w = w + p(n-i+1) * t(i);
 end
 
 end
