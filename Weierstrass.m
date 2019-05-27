@@ -9,17 +9,21 @@ function [x,k]=Weierstrass(x0, p, tol, max_iter)
 
 n = max(size(p)) - 1;
 
-dx=tol+1;
-k=0; x=[];
+dx=ones(n, 1);
+k=0; 
+x=zeros(n, 1);
 
 while norm(dx)> tol && k<= max_iter 
 
     for i = 1:n
         dx(i) = WeierstrassPolynomial(x0(i), p)/product1(x0,i);
+        disp(dx(i))
+        disp("----")
     end
     x=x0-dx;
     k=k+1;
     x0=x;
+    disp("=====")
 end
 
 end
@@ -32,5 +36,6 @@ function s = product1(x, i)
             continue 
         end
      s = s*(x(j)-x(i));
+     disp(s)
     end
 end
