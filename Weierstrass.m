@@ -7,7 +7,7 @@ function [x,k]=Weierstrass(x0, p, tol, max_iter)
 % tol : tolerance
 % max_iter : maximum number of iterations
 
-n = max(size(p));
+n = max(size(p)) - 1;
 
 dx=tol+1;
 k=0; x=[];
