@@ -6,6 +6,10 @@ end
     
 [xf, k] = Weierstrass(xi, p, 1e-6, 1);
 
+fplot(@(x) WeierstrassPolynomial(x, p), [-10, 10])
+grid on
 for i = 1:n
-    WeierstrassPolynomial(xf(i), p)
+    hold on 
+    w = WeierstrassPolynomial(xf(i), p);
+    line([xf(i) xf(i)],[w - 100, w + 100]);
 end
