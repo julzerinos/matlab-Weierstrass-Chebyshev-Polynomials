@@ -12,11 +12,11 @@ The script can be slightly modified to support finding the approximations of roo
 
 The linear combination of the Chebyshev polynomials can be represented as
 
-![Latex: Linear combination of Chebyshev polynomials](Documentation/images/1.gif), 
+![Latex: Linear combination of Chebyshev polynomials](Documentation/images/1.png), 
 
 where 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Latex: Chebyshev polynomial](Documentation/images/2.gif) is a Chebyshev polynomial of the first kind of degree <em>n</em> and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Latex: Chebyshev polynomial](Documentation/images/2.png) is a Chebyshev polynomial of the first kind of degree <em>n</em> and
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>p</em> are the coefficients of the polynomial.
 
@@ -24,11 +24,11 @@ where
 
 The Weierstrass method is an iterative method closely related to Newton's method for finding the roots of a polynomial. In a simplified manner, the method is brought down to the following expression:
 
-![Latex: Weierstrass method iteration](Documentation/images/3.gif)
+![Latex: Weierstrass method iteration](Documentation/images/3.png)
 
 It is important to realize, that we are not dealing with a single simple polynomial, but a linear combination of Chebyshev polynomials of the first order, thus the roots are actually representable in the following way:
 
-![Latex: Chebyshev polynomial roots](Documentation/images/4.gif)
+![Latex: Chebyshev polynomial roots](Documentation/images/4.png)
 
 ## The script
 
