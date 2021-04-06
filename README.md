@@ -16,7 +16,7 @@ The linear combination of the Chebyshev polynomials can be represented as
 
 where 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img source="https://raw.githubusercontent.com/julzerinos/matlab-Weierstrass-Chebyshev-Polynomials/master/Documentation/images/2.png" width="40" height="40"> is a Chebyshev polynomial of the first kind of degree <em>n</em> and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/julzerinos/matlab-Weierstrass-Chebyshev-Polynomials/master/Documentation/images/2.png" width="45"> is a Chebyshev polynomial of the first kind of degree <em>n</em> and
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>p</em> are the coefficients of the polynomial.
 
